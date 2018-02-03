@@ -1,0 +1,98 @@
+#### ##FInd the cube root
+####
+####x = int(raw_input(" Enter a number: "))
+####ans = 0
+####while ans**3 < abs(x):
+####    ans = ans + 1
+####    #print "current guess is = " + str(ans)
+####if ans**3 != abs(x):
+####    print x, ' is not a perfect cube.'
+####
+####else:
+####    if x < 0:
+####        ans = -ans
+####print str(ans) + ' is the cube root of ' + str(x)
+####
+####
+####
+##x = int(raw_input(" Number please: "))
+##
+##for ans in range(0, abs(x)+1):
+##    if ans**3 == abs(x):
+##        break
+##if ans**3 != abs(x):
+##    print x, 'is not a perfect cube'
+##
+##else:
+##    if x<0:
+##        ans = -ans
+##print x, ' root is ' + str(ans)
+##        
+###### find a square root
+####
+####z = int(raw_input('number: '))
+####for ans in range(0, abs(z)+1):
+####    if ans**2 == abs(z):
+####        break
+####
+####if ans**2 != abs(z):
+####    print z, 'does not have a sq root'
+####    
+####else:
+####    if z < 0:
+####        ans = -ans
+####
+####print z, ' root is ' + str(ans)
+##
+####
+###### Find the sq root
+####
+####x = int(raw_input('Number: '))
+####
+####ans = 0
+####while ans*ans < abs(x):
+####    ans = ans + 1
+####    print 'guess = ' + str(ans)
+####
+####if ans**2 != abs(x):
+####    print ' not this, homie'
+####
+####elif x < 0:
+####    ans = -ans
+####
+######print x, ' has a sq root of ' + str(ans)
+##
+##x = int(raw_input('number: '))
+##E = float(raw_input('E: '))
+##numguesses = 0
+##y = 0.0
+##
+##while abs(y**2 - x) >= E and y <= x:
+##    y += 0.1
+##    numguesses += 1
+##print "numguesses = ", numguesses
+##
+##if abs(y**2 - x) >= E:
+##    print 'Failed'
+##else:
+##    print y, ' is the sq root of ', x
+
+##x = int(raw_input('number: '))
+##E = float(raw_input('E: '))
+##numguesses = 0
+##low = 0.0
+##high = x
+##y = (high + low)/2.0
+##
+##while abs(y**2 - x) >= E and y <= x:
+##    numguesses += 1
+##    print low, high, y
+##
+##    if y**2 < x:
+##        low = y
+##    else:
+##        high = y
+##    y = (low + high)/2.0
+##print 'numguesses = ', numguesses
+##print y, ' is close to square root of ',x 
+##

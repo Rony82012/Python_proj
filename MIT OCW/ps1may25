@@ -1,0 +1,90 @@
+#### problem set 1
+#### credit card assignment
+
+##balance = float(raw_input("Enter the outstanding balance on the credit card: "))
+##annualInterestRate = float(raw_input('Enter the annul interest rate as a decimal: '))
+##minmonthlypaymentrate = float(raw_input("Enter the minimum monthly payment rate as a decimal: "))
+##       ##have asked for the input values to calculate
+###monthly interest rate
+##monthlyInterestRate = annualInterestRate/12
+##
+###intialvariable
+##numMonths = 1
+##totalpayed = 0
+##
+##while numMonths <= 12:
+##    minPayment = round(minmonthlypaymentrate*balance,2)
+##    totalpayed += minPayment
+##    interestpaid = round(monthlyInterestRate*balance,2)
+##
+##    principlepaid = minPayment - interestpaid
+##
+##    balance -= principlepaid
+##
+##    print 'Month: Rs.', numMonths
+##    print 'Minimum Monthly Payment: Rs.', minPayment
+##    print 'Remaining balance: Rs.', balance
+##    numMonths += 1
+##
+##print 'Result'
+##print 'Total amount paid: Rs.',totalpayed
+##print 'Remaining balance: Rs.', balance
+##
+##
+##
+
+
+
+##problemset2
+
+##to calculet the minimum fixed monthly payment needed in order to pay off a credit card balance
+##within 12 months. not dealing with a minimum monthly payment rate
+##
+##outstandingbalance = float(raw_input('Enter the outstanding balance on the credit card: '))
+##annualinterestrate = float(raw_input('Enter the anual interest rate as a deciaml: '))
+##
+##monthlyinterestrate = annualinterestrate/12
+##monthlypayment = 0
+##nummonths = 0
+##balance = outstandingbalance
+##
+##while balance>0:
+##    monthlypayment += 10
+##    balance = outstandingbalance
+##    nummonths = 0
+##    while nummonths < 12 and balance > 0:
+##        nummonths += 1
+##        interest = monthlyinterestrate * balance
+##        balance -= monthlypayment
+##        balance += interest
+##balance = round(balance,2)
+##
+##chipping in new values
+##
+##monthlypaymentlower = outstandingbalance/12
+##monthlypaymentupper = (outstandingbalance*(1+(annualinterestrate/12))**12)/12
+##print 'Result'
+##print 'Monthly payment to pay off debt in a year: ', monthlypayment
+##print 'number of months needed: ', nummonths
+##print "Balance:", balance
+##print "Upper bound: Rs.", monthlypaymentupper
+##print "lower bound: Rs.", monthlypaymentlower
+
+####problemset3
+##
+##outstandingbalance = float(raw_input('Enter the outstanding balance on your credit card: '))
+##annualinterestrate = float(raw_input('Enter the annual credit card interest rate as a decimal: "))
+##
+##balance = outstandingbalance
+##lowerbound = balance/12
+##upperbound = (balance*(1+outstandingbalance/12)**12)/12
+##
+##while true:
+##                                     balance = outstandingbalance
+##                                     monthlypayment = (upperbound + lowerbound)/2
+##                                    for month in range(1,13):
+##                                     interest = round(balance*annualinterestrate/12, 2)
+##                                     balance += interest - monthlypayment
+##                                     if balance <= 0:
+##                                     break
+                                    

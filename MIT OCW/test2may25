@@ -1,0 +1,46 @@
+#practicing
+
+##name = str(raw_input("Enter your Name: "))
+##age = int(raw_input("Enter your Age: "))
+outstanding_balance = float(raw_input(" Enter your outstanding balance: "))
+annual_rate = float(raw_input("Enter the annual interest rate: "))
+
+monthly_rate = annual_rate/12
+nummonths = 0
+balance = outstanding_balance
+
+lowerrate = balance/12
+upperrate = (balance*(1 + (annual_rate/12))**12)/12
+
+while True:
+    balance >0
+    monthly_payment = (lowerrrate + upperrate)/2
+    
+    for months in range(1,13):
+        interest = round((balance*annualinterest)/12)
+        balance += interest - monthly_payment
+
+        if bal < 0:
+            break
+
+    if (uppper + lower < 0.005):
+        print 'Result'
+
+        monthly_payment = round(monthly_payment + 0.004999, 2)
+        print "Monthly payment to pay off debt in a year: ", monthly_payment
+
+        balance = outstandingbalance
+        for months in range(1,13):
+            interest = round((balance*annualinterest)/12)
+            balance += interest - monthly_payment
+
+            if bal < 0:
+                break
+        print "Number of months needed: ", months
+        print "Balance: ", round(balance, 2)
+        break
+    elif balance < 0:
+        upperrate = monthly_payment
+    else:
+        lowerrate = monthly_payment
+    

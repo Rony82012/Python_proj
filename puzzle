@@ -1,0 +1,23 @@
+## puzzle
+
+for red in range(-9,10,1):
+    
+    for blue in range(-9,10,1):
+        
+        for grey in range(-9,10,1):
+            
+            for i in range(-9,10,1):
+                
+
+                x = red + blue + grey
+                y = red + blue + grey
+                z = red + blue + grey
+             
+                i = grey + grey +grey
+
+                if i == x + y + z:
+                    print red
+                    print blue
+                    print grey
+                else:
+                    print "a"
