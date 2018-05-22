@@ -1,9 +1,14 @@
 
+
+
+
+
+'''
 def linear_merge(list1,list2):
 	return sorted(list1+list2)
 
 print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']))
-
+'''
 '''
 def remove_adjacent(nums):
 	s1 = set(nums)
