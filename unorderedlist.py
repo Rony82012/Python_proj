@@ -101,6 +101,8 @@ class UnorderedList:
     			count+=1 
 
     def pop(self,pos):
+    	current = self.head
+    	
 
 
 
