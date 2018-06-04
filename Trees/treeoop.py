@@ -46,15 +46,3 @@ print('right root ',r.getRightChild().getRootVal())
 r.getRightChild().setRootVal('hello')
 print('updated right root ',r.getRightChild().getRootVal())
 
-
-def buildTree(rootObj):
-	r = BinaryTree(rootObj)
-	r.insertLeft('b')
-	r.insertRight('b').getRightChild('d')
-	print(r.getRightChild().getRightChild().getRootVal())
-	r.insertRight('c')
-
-	return r
-
-buildTree('a')
-
